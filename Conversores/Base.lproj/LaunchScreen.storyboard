@@ -16,13 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="hnK-Zi-CSm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="hnK-Zi-CSm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hnK-Zi-CSm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5Yz-j5-V4S"/>
+                            <constraint firstItem="hnK-Zi-CSm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CCP-3l-R04"/>
+                            <constraint firstItem="hnK-Zi-CSm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GRF-Su-UlK"/>
+                            <constraint firstItem="hnK-Zi-CSm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I60-8K-hID"/>
+                            <constraint firstItem="hnK-Zi-CSm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QhL-Cg-n9x"/>
+                            <constraint firstItem="hnK-Zi-CSm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TLt-rz-2Y1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
