@@ -38,6 +38,10 @@ class ViewController: UIViewController {
             lbUnit.text = "Distância"
             btUnit1.setTitle("Metro", for: .normal)
             btUnit2.setTitle("Quilômetro", for: .normal)
+        case "Distância":
+            lbUnit.text = "Bitcoin"
+            btUnit1.setTitle("Bitcoin", for: .normal)
+            btUnit2.setTitle("Real", for: .normal)
         default:
             lbUnit.text = "Temperatura"
             btUnit1.setTitle("Celsius", for: .normal)
@@ -50,9 +54,9 @@ class ViewController: UIViewController {
     @IBAction func showPrevious(_ sender: UIButton) {
         switch lbUnit.text! {
         case "Temperatura":
-            lbUnit.text = "Distância"
-            btUnit1.setTitle("Metro", for: .normal)
-            btUnit2.setTitle("Quilômetro", for: .normal)
+            lbUnit.text = "Bitcoin"
+            btUnit1.setTitle("Bitcoin", for: .normal)
+            btUnit2.setTitle("Real", for: .normal)
         case "Peso":
             lbUnit.text = "Temperatura"
             btUnit1.setTitle("Celsius", for: .normal)
@@ -61,6 +65,10 @@ class ViewController: UIViewController {
             lbUnit.text = "Peso"
             btUnit1.setTitle("Kilograma", for: .normal)
             btUnit2.setTitle("Libra", for: .normal)
+        case "Bitcoin":
+            lbUnit.text = "Distância"
+            btUnit1.setTitle("Metro", for: .normal)
+            btUnit2.setTitle("Quilômetro", for: .normal)
         default:
             lbUnit.text = "Moeda"
             btUnit1.setTitle("Real", for: .normal)
@@ -86,6 +94,8 @@ class ViewController: UIViewController {
             calcWeight()
         case "Moeda":
             calcCurrency()
+        case "Bitcoin":
+            calcCryptoCurrenciy()
         default:
             calcDistance()
         }
@@ -146,6 +156,18 @@ class ViewController: UIViewController {
         } else {
             lbResultUnit.text = "Quilômetro"
             lbResult.text = String((distance * 1000.0))
+        }
+    }
+    
+    func calcCryptoCurrenciy() {
+        guard let crypto = Double(tfValue.text!) else {return}
+        
+        if btUnit1.alpha == 1 {
+            lbResultUnit.text = "Bitcoin"
+            lbResult.text = String(crypto / 300000.0)
+        } else {
+            lbResultUnit.text = "Real"
+            lbResult.text = String((crypto * 300000.0))
         }
     }
 }
