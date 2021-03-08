@@ -68,6 +68,17 @@
                                             <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ac4-03-dsO"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf4-da-zTk">
+                                        <rect key="frame" x="25" y="26" width="30" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
+                                        <state key="normal" title="←">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPrevious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F72-1i-2ib"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
@@ -94,6 +105,7 @@
                         <outlet property="btUnit2" destination="H2b-A2-DeF" id="pf4-Vf-RfU"/>
                         <outlet property="lbResult" destination="hZe-tq-Xur" id="ZRQ-6k-ckc"/>
                         <outlet property="lbResultUnit" destination="Zlx-hs-A0d" id="CfH-VR-Ekh"/>
+                        <outlet property="lbUnit" destination="eLd-iy-L4n" id="S45-IR-jcJ"/>
                         <outlet property="tfValue" destination="655-j6-vj8" id="qkU-Ck-Isd"/>
                     </connections>
                 </viewController>
