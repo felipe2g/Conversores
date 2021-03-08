@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    
+    @IBAction func showNext(_ sender: UIButton) {
+    }
+    
+    @IBAction func convert(_ sender: UIButton) {
+    }
 }
 

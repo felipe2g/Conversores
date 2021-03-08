@@ -34,6 +34,9 @@
                                         <state key="normal" title="→">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1Z-2r-LJE"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="655-j6-vj8">
                                         <rect key="frame" x="25" y="114" width="365" height="107"/>
@@ -50,6 +53,9 @@
                                         <state key="normal" title="Celsius">
                                             <color key="titleColor" systemColor="systemGray6Color"/>
                                         </state>
+                                        <connections>
+                                            <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dt3-Y5-x7A"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2b-A2-DeF">
                                         <rect key="frame" x="249" y="293" width="141" height="74"/>
@@ -58,6 +64,9 @@
                                         <state key="normal" title="Fahreinheit">
                                             <color key="titleColor" systemColor="systemGray6Color"/>
                                         </state>
+                                        <connections>
+                                            <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ac4-03-dsO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
