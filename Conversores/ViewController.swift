@@ -103,7 +103,14 @@ class ViewController: UIViewController {
         view.endEditing(true)
         
         let result = Double(lbResult.text!)!
-        lbResult.text = String(format: "%.2f", result)
+        
+        if lbUnit.text == "Bitcoin"{
+            lbResult.font = lbUnit.font.withSize(40)
+            lbResult.text = String(format: "%.8f", result)
+        } else {
+            lbResult.font = lbUnit.font.withSize(100)
+            lbResult.text = String(format: "%.2f", result)
+        }
     }
     
     func calcTemperature(){
